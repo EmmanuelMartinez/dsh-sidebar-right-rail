@@ -1,0 +1,8 @@
+# The right Sidebar's surface toggling. A deployment whose ui-sidebar-right
+# predates the icon rail cannot answer a rail press, so its in-box row is
+# disabled and this build takes its place.
+- insert:
+    - id: sidebar-right-rail
+      name: '@deepseek-ai/dsh-sidebar-right-rail'
+- id: ui-sidebar-right
+  disabled: true
